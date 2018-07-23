@@ -16,7 +16,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Operation.ReadObject;
-import Operation.UIOperation;
+
+import Operation.UIOperations;
 
 public class HybridTestCase {
 	WebDriver driver;
@@ -31,7 +32,7 @@ public class HybridTestCase {
 		Properties allObject=object.getObjectRepository();
 		
 		
-		UIOperation uio=new UIOperation(driver);
+		UIOperations uio=new UIOperations(driver);
 		uio.KeyWordPerform(allObject, keyWord, objectName, objectType, data);
 		
 		}

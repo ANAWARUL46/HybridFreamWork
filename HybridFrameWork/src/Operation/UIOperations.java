@@ -16,12 +16,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-public class UIOperation {
+public class UIOperations {
 	WebDriver driver;
-	//public UIOperation(WebDriver driver) {
-		//this.driver=driver;
+	public UIOperations(WebDriver driver) {
+		this.driver=driver;
 		
-	//}
+	}
 	public void KeyWordPerform(Properties p, String keyword,String objectName,String objectType,
 		String data	) throws Exception {
 		switch( keyword.toUpperCase()) {
