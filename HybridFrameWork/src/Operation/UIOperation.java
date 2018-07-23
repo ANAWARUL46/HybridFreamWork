@@ -67,8 +67,8 @@ public class UIOperation {
 			break;
 			
 	    case"SCREENSHOT":
-			File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(f,new Fil
+			File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(f,new File(System.getProperty("user.dir")+"\\"+"CaptureShot\\ScreenShot1.png"));
 			//FileUtils.copyFile(srcFile, new File("C:\\Shot\\Facebook.jpg"));
 			break;
 			
